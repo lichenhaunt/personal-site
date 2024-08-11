@@ -1,0 +1,113 @@
+:root {
+  --mizuiro: rgb(162, 241, 255);
+  --baby-blue: rgb(153, 207, 231, 0.75);
+  --pink: rgb(255, 226, 243);
+  --white: rgb(255, 255, 255, 0.95);
+}
+
+body {
+  background-image: url(/assets/sky-sadgrl.png);
+}
+
+header {
+  color: white;
+  background-color: var(--baby-blue);
+  font-size: medium;
+  text-align: center;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  padding: 12px 0px;
+  border-radius: 8px;
+}
+
+#top-nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  margin: 2px auto;
+  padding: 4px 0px;
+  font-size: 20px;
+  background-color: var(--white);
+  border-radius: 5px;
+}
+
+#top-nav a {
+  color: var(--baby-blue);
+  text-decoration: none;
+}
+
+#top-nav a:visited {
+  color: var(--pink);
+}
+
+#top-nav a:hover,
+#top-nav a:focus {
+  color: var(--mizuiro);
+  border: 1px solid var(--mizuiro);
+  border-radius: 5px;
+}
+
+[name="theme"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  background-color: white;
+  color: black;
+  border: 1px solid var(--mizuiro);
+  border-radius: 5px;
+}
+
+.widget {
+  border: 2px solid white;
+  background-color: var(--baby-blue);
+}
+
+#side-nav {
+  width: 250px;
+  height: auto;
+  margin: 0px 8px;
+}
+
+.nav-title {
+  color: var(--pink);
+  padding: 4px;
+  margin: 0px;
+  font-size: 20px;
+}
+
+.main-title {
+  background-color: white;
+  margin: 0px;
+  padding: 2px;
+  color: var(--baby-blue);
+  font-size: 25px;
+}
+
+#side-nav ul a {
+  color: var(--mizuiro);
+}
+
+#side-nav ul a:hover,
+#side-nav ul a:focus {
+  border: 1px solid var(--mizuiro);
+  border-radius: 5px;
+  color: white;
+}
+
+#hello {
+  color: white;
+}
+
+#hello b,
+#hello i {
+  color: var(--pink);
+}
+
+#hello b:hover,
+#hello i:hover {
+  color: var(--mizuiro);
+}

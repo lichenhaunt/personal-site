@@ -1,0 +1,176 @@
+:root {
+  --blue: rgb(32, 70, 82, 0.95);
+  --light-blue: rgb(153, 215, 248);
+  --light-blue2: rgb(148, 193, 218);
+  --bright-blue: rgb(25, 176, 214);
+  --black: rgb(0, 0, 0, 0.85);
+}
+
+body {
+  background-image: url(/assets/aquagalaxy_small-sadgrl.gif);
+}
+
+header {
+  font-family: "Cloister Black", "Franklin Gothic Medium";
+  color: var(--light-blue);
+  background-color: var(--blue);
+  font-size: medium;
+  text-align: center;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  padding: 12px 0px;
+  border-radius: 8px;
+}
+
+#top-nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  margin: 2px auto;
+  padding: 4px 0px;
+  font-family: "Venice Classic", monospace;
+  font-size: 20px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+#top-nav a {
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
+#top-nav a:visited {
+  color: var(--bright-blue);
+}
+
+#top-nav a:hover,
+#top-nav a:focus {
+  color: white;
+  border: 1px solid var(--light-blue);
+  border-radius: 5px;
+}
+
+[name="theme"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.widget {
+  background-color: var(--black);
+  border: 2px solid var(--blue);
+  display: flex;
+  flex-direction: column;
+}
+
+#side-nav {
+  width: 250px;
+  height: auto;
+  margin: 0px 8px;
+}
+
+.nav-title {
+  font-family: "Venice Classic", monospace;
+  color: var(--bright-blue);
+  padding: 4px;
+  margin: 0px;
+  font-size: 20px;
+}
+
+.main-title {
+  background-color: var(--blue);
+  margin: 0px;
+  padding: 2px;
+  color: var(--light-blue);
+  font-size: 25px;
+  font-family: "Cloister Black", sans-serif;
+}
+
+#side-nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Glow Night", serif;
+  font-size: 24;
+}
+
+#side-nav ul a {
+  text-decoration: none;
+  padding: 4px 0px;
+  color: var(--blue);
+}
+
+#side-nav ul a:hover,
+#side-nav ul a:focus {
+  border: 1px solid var(--light-blue2);
+  border-radius: 5px;
+  color: var(--light-blue);
+}
+
+#hello {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  right: 20%;
+  text-align: center;
+  color: var(--light-blue2);
+  font-family: "Venice Classic", monospace;
+}
+
+#hello h2 {
+  font-family: "Cloister Black", sans-serif;
+}
+
+#hello b,
+#hello i {
+  font-family: "Glow Night", serif;
+  color: var(--bright-blue);
+}
+
+#hello b:hover,
+#hello i:hover {
+  color: white;
+  font-size: large;
+}
+
+#web-stuff {
+  position: absolute;
+  right: 8px;
+  width: 250px;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+#web-stuff ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#web-stuff a {
+  font-family: "Glow Night";
+  font-size: 24;
+  text-decoration: none;
+  padding: 4px 0px;
+  color: var(--blue);
+}
+
+#web-stuff ul a:hover,
+#web-stuff ul a:focus {
+  border: 1px solid var(--light-blue2);
+  border-radius: 5px;
+  color: var(--light-blue);
+}
+
+.rss {
+  content: url(/assets/rss.png);
+}
