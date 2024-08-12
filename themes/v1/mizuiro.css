@@ -111,3 +111,40 @@ header {
 #hello i:hover {
   color: var(--mizuiro);
 }
+
+#web-stuff a,
+#web-stuff p {
+  color: var(--mizuiro);
+}
+
+#web-stuff ul a:hover,
+#web-stuff ul a:focus {
+  color: white;
+  border: 1px solid var(--mizuiro);
+  border-radius: 5px;
+}
+
+#web-stuff small {
+  color: var(--mizuiro);
+}
+
+#web-stuff i {
+  color: var(--pink);
+}
+
+#web-stuff i:hover {
+  font-size: medium;
+  color: var(--white);
+}
+
+.jukebox button {
+  color: var(--pink);
+  background-color: var(--baby-blue);
+  border: 1px solid var(--white);
+  border-radius: 5px;
+}
+
+.jukebox button:hover {
+  color: var(--white);
+  border-color: var(--pink);
+}

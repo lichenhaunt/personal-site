@@ -22,6 +22,24 @@
     <link href="styles.css" rel="stylesheet" />
     <!-- add tooltips later for hover text -->
   </head>
+  <script>
+    function stopmusic() {
+      var y = document.getElementsByTagName("audio");
+      for (var j = 0; j < y.length; j++) {
+        y[j].pause();
+      }
+    }
+
+    function playsong() {
+      var y = document.getElementsByTagName("audio");
+      for (var j = 0; j < y.length; j++) {
+        y[j].pause();
+      }
+      var songvalue = event.target.value;
+      document.getElementsByTagName("audio")[songvalue].currentTime = 0;
+      document.getElementsByTagName("audio")[songvalue].play();
+    }
+  </script>
   <body>
     <div id="wrapper">
       <!-- header -->
@@ -99,10 +117,119 @@
           <!-- add link to something explaining an RSS feed later -->
           <!-- get script for rss later -->
         </ul>
+        <h3 class="nav-title">Find me Elsewhere</h3>
+        <ul>
+          <a
+            href="https://lichenhaunt.tumblr.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Tumblr (WARNING ADULT CONTENT)</a
+          >
+          <a href="/chat">Discuss Wizard Politics</a>
+          <a href="mailto:lichenhaunt@yahoo.com">Email Me</a>
+          <small
+            >If you notice anything weird/not working on the site,
+            <i>you've been cursed!</i></small
+          >
+          <small id="hidden-message"
+            >Do reach out if something's amiss, I'd love to make your stay more
+            enjoyable</small
+          >
+        </ul>
+        <h3 class="nav-title">The Council said I have to put these here</h3>
+        <!-- add buttons for friends and webrings later -->
+        <ul>
+          <p>placeholder for webrings/buttons for friends</p>
+        </ul>
       </section>
+      <!-- music player code from solaria.neocities.org script for it is theirs too -->
+      <div class="widget" id="music-player">
+        <h3 id="marq" class="main-title">
+          You're listening to 420.69 - Wizards Only Fools!
+        </h3>
+        <div class="jukebox">
+          <button class="activate">
+            <img
+              src="/assets/11808137_0a6bb.gif"
+              width="100px"
+              height="100px"
+            />
+          </button>
+          <ul>
+            <button onclick="stopmusic()">stop music</button>
+
+            <li>
+              <button value="0" onclick="playsong()">
+                dive-pkmn-oras.mp3
+                <audio>
+                  <source
+                    src="/collections/music/uploads/Pokemon Omega Ruby & Alpha Sapphire OST Dive Music.mp3"
+                    type="audio/mp3"
+                  />
+                </audio>
+              </button>
+            </li>
+            <li>
+              <button value="1" onclick="playsong()">
+                DΛRKNΣSS - magician whisper.mp3
+                <audio>
+                  <source
+                    src="/collections/music/uploads/DΛRKNΣSS - magician whisper.mp3"
+                    type="audio/mp3"
+                  />
+                </audio>
+              </button>
+            </li>
+            <li>
+              <button value="2" onclick="playsong()">
+                shadow wizard goblin insanity.mp3
+                <audio>
+                  <source
+                    src="/collections/music/uploads/shadow wizard goblin insanity.mp3"
+                    type="audio/mp3"
+                  />
+                </audio>
+              </button>
+            </li>
+            <li>
+              <button value="3" onclick="playsong()">
+                i_hate_myself_for_loving_you.mp3
+                <audio>
+                  <source
+                    src="https://media-upload.net/uploads/TRNy3ljbSKXa.mp3"
+                    type="audio/mp3"
+                  />
+                </audio>
+              </button>
+            </li>
+            <li>
+              <button value="4" onclick="playsong()">
+                i_would_walk_500_miles.mp3
+                <audio>
+                  <source
+                    src="https://media-upload.net/uploads/KGSmbhNQCsfF.mp3"
+                    type="audio/mp3"
+                  />
+                </audio>
+              </button>
+            </li>
+          </ul>
+
+          <script>
+            var y = document.getElementsByTagName("audio");
+            for (var j = 0; j < y.length; j++) {
+              y[j].onended = function () {
+                document.getElementById("marq").innerHTML =
+                  "You're listening to 420.69 - Wizards Only Fools!";
+              };
+            }
+          </script>
+        </div>
+      </div>
     </div>
   </body>
   <script src="/themes/v1/theme.js"></script>
+  <script src="/tooltips/displayHiddenMessage.js"></script>
   <noscript>
     <p>
       JavaScript is disabled or not supported by current browser, some features

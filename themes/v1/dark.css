@@ -156,7 +156,8 @@ header {
   justify-content: space-evenly;
 }
 
-#web-stuff a {
+#web-stuff a,
+#web-stuff p {
   font-family: "Glow Night";
   font-size: 24;
   text-decoration: none;
@@ -171,6 +172,83 @@ header {
   color: var(--light-blue);
 }
 
+#hidden-message {
+  display: none;
+}
+
+#web-stuff small {
+  font-family: "Venice Classic", monospace;
+  padding: 4px 2px;
+  color: var(--blue);
+}
+
+#web-stuff i {
+  color: var(--light-blue2);
+}
+
 .rss {
   content: url(/assets/rss.png);
+}
+
+#web-stuff i:hover {
+  font-size: medium;
+  color: white;
+}
+
+#music-player {
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  top: 38%;
+  left: 45%;
+  right: 50%;
+}
+
+.jukebox ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  list-style: none;
+  text-align: center;
+}
+
+.jukebox li {
+  padding: 2px 0px;
+}
+
+.jukebox button {
+  background-color: var(--black);
+  color: var(--light-blue);
+  border: 1px solid var(--light-blue);
+  border-radius: 5px;
+}
+
+.jukebox button:hover {
+  color: white;
+  border-color: white;
+}
+
+#music-player h3 {
+  text-align: center;
+  font-size: large;
+  font-family: "Venice Classic", monospace;
+}
+
+.activate {
+  margin: 2px 30px;
+}
+
+.jukebox:hover ul,
+.activate:focus + ul,
+.juekbox:focus-within > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  right: 50%;
+  z-index: 1;
 }
