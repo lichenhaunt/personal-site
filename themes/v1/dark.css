@@ -127,6 +127,8 @@ header {
 
 #hello h2 {
   font-family: "Cloister Black", sans-serif;
+  font-size: 30px;
+  margin-bottom: -4px;
 }
 
 #hello b,
@@ -188,6 +190,8 @@ header {
 
 .rss {
   content: url(/assets/rss.png);
+  max-width: 24px;
+  max-height: 24px;
 }
 
 #web-stuff i:hover {
@@ -251,4 +255,44 @@ header {
   left: 20%;
   right: 50%;
   z-index: 1;
+}
+
+#big-gifs {
+  position: absolute;
+  top: 38%;
+  left: 30%;
+}
+
+#big-gifs img:first-of-type {
+  padding-right: 460px;
+}
+
+#main {
+  color: var(--light-blue);
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: -220px;
+  padding: 4px 8px;
+}
+
+#main h2 {
+  font-family: "Cloister Black", "Franklin Gothic Medium", sans-serif;
+  font-size: 50px;
+}
+
+#main p {
+  font-family: "Glow Night", serif;
+}
+
+#main br {
+  margin: 1em;
+}
+
+#main b {
+  color: var(--bright-blue);
+}
+
+#main b:hover {
+  color: white;
 }

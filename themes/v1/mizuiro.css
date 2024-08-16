@@ -117,6 +117,11 @@ header {
   color: var(--mizuiro);
 }
 
+.rss {
+  width: 24px;
+  height: 24px;
+}
+
 #web-stuff ul a:hover,
 #web-stuff ul a:focus {
   color: white;
@@ -147,4 +152,26 @@ header {
 .jukebox button:hover {
   color: var(--white);
   border-color: var(--pink);
+}
+
+#big-gifs img {
+  content: url(/themes/v1/mizuiro/Tumblr_l_1433090420926697.gif);
+}
+
+#main {
+  color: white;
+}
+
+#main b {
+  color: var(--pink);
+}
+
+#main b:hover {
+  color: var(--mizuiro);
+}
+
+#main img {
+  content: url(/themes/v1/mizuiro/Tumblr_l_1434264911948437.jpg);
+  width: 75%;
+  margin: 0 auto;
 }
