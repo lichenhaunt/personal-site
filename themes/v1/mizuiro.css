@@ -155,7 +155,7 @@ header {
 }
 
 #big-gifs img {
-  content: url(/themes/v1/mizuiro/Tumblr_l_1433090420926697.gif);
+  content: url(/themes/v1/mizuiro/Tumblr_l_9687564870417.gif);
 }
 
 #main {
@@ -170,7 +170,7 @@ header {
   color: var(--mizuiro);
 }
 
-#main img {
+.divider {
   content: url(/themes/v1/mizuiro/Tumblr_l_1434264911948437.jpg);
   width: 75%;
   margin: 0 auto;
