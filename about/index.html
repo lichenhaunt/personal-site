@@ -1,25 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+	<!-- most of this was cloned from dogmeat's f2u template, CSS edited for my style and .card added by me -->
+  <!-- remember to download the "yukika" folder and keep everything on that folder unless you know what you're doing! -->
+
+  <!--live preview @ https://doqmeat.github.io/HTML-templates/yukika/-->
+
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--	favicon / tab img -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://files.catbox.moe/15rq8w.gif"
+    />
     <title>About me - lichenhaunt.com</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, scale=1.0" />
-    <meta description="lichenhaunt's about me page, ugh" />
-    <link rel="stylesheet" href="/fonts/styles.css" type="text/css" />
-    <link rel="stylesheet" href="/about/styles.css" type="text/css" />
+	<meta title="description" content="about me page for lichenhaunt's personal website">
+    <link href="body.css" rel="stylesheet" />
+	<link href="../fonts/styles.css" rel="stylesheet" type="text/css">
+    <!--	customizable tooltips -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="tooltip/tooltip-jquary.js"></script>
+    <script src="tooltip/tooltip.js"></script>
+    <!--	end of tooltips -->
+	<!-- fontawesome script used for badge icons on .card-->
     <script src="https://kit.fontawesome.com/680a77a2ee.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <main>
-        <button id="back">
-            <a href="/">
-            <img src="./Dusk_Ball_battle_V.png">
 
-            </a>
-        </button>
-        <!-- trainer card start -->
-        <div class="card-container">
-        <section class="card">
+  <body>
+    <div id="hide">
+      <!--	this message will appear if someone tries to view it on a phone-->
+      best viewed on desktop. <br />
+      rotate your phone !!!!!!!
+    </div>
+
+	<a href="/" title="Go to homepage" class="homepage"><img src="./assets/Dusk_Ball_battle_V.png" height="75px" width="75px" style="padding: 1em; background-color: transparent;"></a>
+
+    <div id="buttons">
+      <!--	the navigation buttons -->
+      <button id="beforeBtn" class="navBtns">button 1</button>
+
+      <button id="afterBtn" class="navBtns">button 2</button>
+    </div>
+
+    <!-- passport cover -->
+    <div title="click to open!" id="cover" onclick="passportOpen()"></div>
+
+    <!--	opened passport -->
+    <div id="passport-opened">
+      <!--	page one -->
+      <div id="page-1" class="page">
+        <!--		top half -->
+        <div class="up">
+			<!-- trainer card coded by lichenhaunt -->
+          <section class="card">
                 <!-- decorative lines-->
             <div class="art-line" id="top"></div>
             <div class="art-line" id="bottom"></div>
@@ -66,20 +100,22 @@
               alt="Typhlosion"
           /></a>
           </div>
+		  <!-- party mons end -->
         </div>
-        <!-- party mons end -->
+        
 
         <!-- trainer image (yes im a grafaiai) -->
         <div id="trainer">
-            <a href="https://pokemondb.net/pokedex/grafaiai"><img src="https://img.pokemondb.net/sprites/home/normal/grafaiai.png" alt="Grafaiai"></a>
-        </div>
+            <a href="https://pokemondb.net/pokedex/grafaiai"><img src="https://img.pokemondb.net/sprites/home/normal/grafaiai.png" title="yes, I'm a Grafaiai" alt="Grafaiai"></a>
         </div>
         <!-- end flex container for party mons and trainer -->
+        </div>
 
         <!-- badges section start -->
-        <div class="badge-line"></div>
+        
         <div id="badges">
             <h2>Badges</h2>
+			<div class="badge-line"></div>
             <div id="icons">
                 <i class="fa-brands fa-html5 fa-3x"></i>
             <i class="fa-brands fa-css3-alt fa-3x"></i>
@@ -89,26 +125,136 @@
             <i class="fa-brands fa-github fa-3x"></i>
             <i class="fa-brands fa-python fa-3x"></i>
             </div>
+			<!-- badges end -->
         </div>
-        <!-- badges end -->
+		<!-- end of trainer card -->
+        
         </section>
-        </div>
-        <!-- end of trainer card -->
 
-        <!-- Info card start -->
-        <div id="info-card" class="card-container">
-            <section class="card">
-                <div class="art-line" id="top-2"></div>
-                <h2 id="name-2">lichenhaunt</h2>
-            </section>
+          <!--		top half end div-->
         </div>
 
+        <!--			bottom half -->
+        <div class="down">
+          <div class="header">
+            <h2>Trainer passport</h2>
+            <img
+              src="assets/passport-symbol.png"
+              width="60px"
+              align="right"
+              alt=""
+            />
+          </div>
+          <div class="portrait">
+            <img src="assets/anime-fairy-tumblr.gif" alt="a pretty anime fairy" title="this is not me, i just think she's pretty and she fits the theme too well ok" width="100%" height="100%" style="aspect-ratio: initial; height: 280px; width: 280px;"/>
+          </div>
+          <div class="info1">
+            <h3>Name</h3>
+            <p>lichenhaunt</p>
+            <h3>Where</h3>
+            <p>USA</p>
+            <h3>Age</h3>
+            <p>25</p>
+            <h3>Likes</h3>
+            <p>rats, wizards, Pokemon, animanga, vpets, art, experimental music</p>
+          </div>
+          <div class="info2">
+            <h3>Dislikes</h3>
+            <p>Incoherent character design in a finished product, the amulet that cursed my existence, citrus fruits</p>
+            <h3>Currently Playing</h3>
+            <p>Pokemon Sapphire!!</p>
+            <h3>Currently on Loop in my Head</h3>
+            <p><iframe style="border-radius:12px; margin-bottom:0px;" src="https://open.spotify.com/embed/track/1k8uqF131l6E5AOJNOgcPj?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></p>
+          </div>
+          <div class="footer">
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+            &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo; &lsaquo;
+          </div>
+          <!--			bottom half end div-->
+        </div>
+        <!--		page 1 end div-->
+      </div>
 
-    <section class="buttons">
-        <button>Credit for card bg art</button>
-        <button>Credit for page bg art</button>
-    </section>
-    </main>
-    
+      <!-- page 2 -->
+      <div id="page-2" class="page">
+        <!--		top half -->
+        <div class="up">
+          <h3>More about</h3>
+          <p>I literally hate writing about myself, I never know what's worth mentioning or what people find interesting.
+			Oh well ¯\_(ツ)_/¯
+		  </p>
+		  <p>I'm a 20-something transmasc creator originally from California, but I've lived all over the US. Currently in Florida, but trying desperately to get out due to politics here. Growing up I spent most of my time playing Sonic or Pokemon, or one of the like 5 games I had for my GameCube, playing outside, or making arts and crafts with my mom. I got into anime at like 5 years old, and the chokehold Maximillion Pegasus had on my gender oh my god... Umm...</p>
+		  <p>I work in tech, I won't mention where I work for the sake of my privacy, but I mostly just do configurations for systems my company uses. I have a professional portfolio site for work related stuff, but I really wanted my own personal space to be myself without the fear of a potential employer seeing and being able to tie to my identity. I started teaching myself how to code a few years ago through <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">FreeCodeCamp</a> tutorials on HTML, CSS, and JavaScript. After that, I took part in a bootcamp in hopes of getting a career in tech, it was one of the worst decisions and biggest wastes of time in my life, but it did get me a job.</p>
+		  <p>I spend most of my time either doodling my faves or my OCs, I love character design and fashion, so designing characters is just everything to me. I like making new tech projects, when I can, I see this site being the biggest one in the near future, though. I also enjoy gaming with my partner and our friends, and spending time with our dog SunRay!</p>
+
+          <!--		top half end div-->
+        </div>
+        <!--		bottom half -->
+        <div class="down">
+          <p>
+            This passport template was edited from Dogmeat's free to use <a href="https://doqmeat.github.io/HTML-templates/yukika/" target="_blank" rel="noopener noreferrer">Yukika Passport</a> template. If you want to use it, I'm going to include their instructions on how to download the original template:
+			<br>
+			<small>This whole site was heavily inspired by them and a few other people I've found on the small web. Go check them out, a link is below the tutorial!</small>
+          </p>
+
+		  <!-- dogmeat's instructions -->
+		  <h3>how to download:</h3>
+				<ol>
+					<li><a title="click to go to github page" href="https://github.com/doqmeat/HTML-templates" target="_blank"><img src="assets/screenshot.png" alt="screenshot of github" width="100%"></a></li>
+					<li>unzip</li>
+					<li>keep only "yukika" folder</li>
+					<li>and that's it!</li>
+				</ol>
+
+				<p><b>important note for those using neocities' dashboard:</b> if using on neocities, keep in mind that you can't just drag folders into the dashboard bc neocities fucks them up bad. create the folder first and drop the items instead.</p>
+				
+				<div class="centered">
+					<p>a link to Dogmeat's site &lt;3</p>
+					<a href="https://doqmeat.com" target="_blank"><img src="./assets/doqmeat-2.png"></a>
+				</div>
+          <!--		bottom half end div-->
+        </div>
+        <!--			page 2 end div-->
+      </div>
+      <!--		passport opened end div-->
+    </div>
+
+    <!-- nothing burger spacer at the bottom.-->
+    <div id="spacer"></div>
+
+    <!-- javascript for this to even function -->
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,545 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #ffbd25;
+  --long: 560px;
+  --wide: 420px;
+  --wide2: 840px;
+  --left: 32.2%;
+}
+
+html {
+  scrollbar-color: rgb(253, 193, 240) #dbecff;
+}
+
+body {
+  background: url(./assets/fluffy-galaxies-bytecodeminer.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0px;
+  margin: 0px;
+  font-family: arial;
+  font-size: 14px;
+}
+
+::selection {
+  background: url("./assets/IMG_0513.PNG");
+  color: black;
+}
+
+h1 {
+  color: rgb(253, 193, 240);
+  font-family: "Venice Classic", monospace;
+  text-transform: uppercase;
+  background-color: rgba(156, 67, 137, 0.9);
+  margin: 0px;
+  padding: 70px 0 20px 0;
+  font-size: 38px;
+  letter-spacing: 4px;
+}
+
+h2,
+h3,
+h4 {
+  color: rgb(253, 193, 240);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 245, 100);
+}
+
+a:hover {
+  background-color: rgba(255, 245, 100, 0.7);
+  color: white;
+  cursor: pointer;
+}
+
+#cover {
+  left: var(--left);
+  margin-left: 70px;
+  margin-top: 60px;
+  border-radius: 2px 20px 20px 2px;
+  text-align: center;
+  position: absolute;
+  width: var(--wide);
+  height: var(--long);
+  background: url(assets/IMG_0513.PNG);
+  background-repeat: repeat;
+  background-size: contain;
+  z-index: 2;
+  cursor: grab;
+  box-shadow: 2px 2px 1px white;
+  border: 1px grey solid;
+}
+
+#cover img {
+  width: 64%;
+}
+
+#passport-opened {
+  background-image: url("./assets/pokemon-mansion-joey-rex.jpg");
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  border: 2px solid rgb(255, 245, 100);
+  border-radius: 5px;
+  position: relative;
+  margin-top: -18px;
+  padding: 0;
+}
+
+.up .card h2 {
+  font-family: "Venice Classic", monospace;
+  font-size: 2.5em;
+  text-wrap: nowrap;
+  color: rgb(253, 193, 240);
+  background-color: rgba(156, 67, 137, 0.9);
+  width: fit-content;
+  padding: 2px 4px;
+  border-radius: 5px;
+  z-index: 5;
+  position: relative;
+  font-style: italic;
+}
+
+.up .card p {
+  font-family: "Venice Classic", monospace;
+  text-wrap: nowrap;
+  color: rgb(253, 193, 240);
+  background-color: rgba(156, 67, 137, 0.9);
+  width: fit-content;
+  padding: 2px 4px;
+  border-radius: 5px;
+  z-index: 5;
+  position: relative;
+}
+
+#page-1 .down p {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.up {
+  display: block;
+  height: var(--wide);
+  border-bottom: 2px dashed grey;
+  overflow: auto;
+}
+
+.up #title {
+  position: relative;
+  right: -75%;
+  z-index: 5;
+}
+
+.up #name {
+  margin-left: 2%;
+  margin-top: -1em;
+  z-index: 5;
+}
+
+.up #zodiac {
+  margin-top: -4em;
+  margin-left: 75%;
+}
+
+.up .art-line {
+  background-color: rgba(156, 67, 137, 0.9);
+  width: 100%;
+  height: 8px;
+  z-index: 1;
+}
+
+.up #top {
+  position: relative;
+  top: 60px;
+}
+
+.up #bottom {
+  position: relative;
+  top: 100px;
+}
+
+.up .container {
+  display: flex;
+  margin-top: 1em;
+}
+
+.up #party {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+  position: relative;
+  padding: 4px;
+}
+
+.up #party a img {
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+  background-color: white;
+  border: 1px solid rgb(255, 245, 100);
+}
+
+.up #trainer {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  display: inline-flex;
+}
+
+.up #trainer img {
+  height: 250px;
+  width: 250px;
+  margin-top: -20%;
+}
+
+.up #badges {
+  background-color: rgba(156, 67, 137, 0.9);
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  margin-top: 1em;
+  height: fit-content;
+}
+
+.up #icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  color: rgb(253, 193, 240);
+  position: relative;
+  z-index: 5;
+}
+
+.up #icons i {
+  border: 1px solid rgb(255, 245, 100);
+  padding: 3px 5px;
+  border-radius: 50%;
+  position: relative;
+  background-color: rgba(156, 67, 137, 0.9);
+}
+
+.up .badge-line {
+  width: 100%;
+  height: 4px;
+  position: relative;
+  display: block;
+  z-index: 1;
+  background-color: rgba(255, 245, 100, 0.7);
+}
+
+.up h3 {
+  font-family: "Venice Classic", monospace;
+  font-size: 24px;
+  background-color: rgba(156, 67, 137, 0.9);
+  width: fit-content;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+#page-2 .up {
+  padding: 30px;
+}
+
+.up p {
+  color: rgb(253, 193, 240);
+  font-size: 12;
+  text-transform: bold;
+}
+
+p:hover {
+  background-color: rgba(156, 67, 137, 0.9);
+}
+
+.down {
+  padding: 30px;
+  display: block;
+  height: var(--wide);
+  overflow: auto;
+  color: rgb(253, 193, 240);
+}
+
+#page-2 ol li:hover {
+  background-color: rgba(156, 67, 137, 0.9);
+}
+
+.centered {
+  text-align: center;
+}
+
+/*navigation buttons that pop up when you open (click) on the passport*/
+
+#buttons {
+  text-align: center;
+  width: 250px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button.navBtns {
+  display: none;
+  margin: 4px;
+  background: var(--yellow);
+  font-family: inherit;
+  font-style: italic;
+  border-radius: 4px;
+  border: 2px inset var(--yellow);
+}
+
+button.navBtns:hover {
+  background: black;
+  color: var(--yellow);
+  border: 2px outset var(--yellow);
+}
+
+/*a spacer for the end of the page */
+
+#spacer {
+  position: absolute;
+  height: 50px;
+  width: 10px;
+  top: 900px;
+}
+
+/*the look of the page 1 info table*/
+
+#page-1 .down {
+  font-size: 14px;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "img info1 info2"
+    "footer footer footer";
+  grid-template-columns: 40% 35% 25%;
+  grid-template-rows: 10% 80% 10%;
+  overflow: hidden;
+}
+
+#page-1 .down h3 {
+  color: rgb(255, 245, 100);
+  font-size: 12px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.header h2 {
+  display: inline-block;
+  margin: 0;
+  background-color: rgba(156, 67, 137, 0.9);
+  width: fit-content;
+  color: rgb(253, 193, 240);
+  font-size: 2.5em;
+  font-family: "Venice Classic", monospace;
+  font-style: italic;
+}
+
+.portrait {
+  grid-area: img;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.portrait img {
+  width: 100%;
+}
+
+.info1 {
+  padding: 10px;
+  grid-area: info1;
+  overflow: auto;
+  color: rgb(253, 193, 240);
+}
+
+.info2 {
+  grid-area: info2;
+  padding: 10px;
+  overflow: auto;
+  color: rgb(253, 193, 240);
+}
+
+.info1:hover,
+.info2:hover {
+  background-color: rgba(156, 67, 137, 0.9);
+}
+
+.info1 h3,
+.info2 h3 {
+  text-transform: none;
+}
+
+.footer {
+  grid-area: footer;
+  padding-top: 4px;
+  text-align: center;
+  overflow: hidden;
+  color: rgb(253, 193, 240);
+}
+
+/*this is the tooltip aka the title pop up*/
+#s-m-t-tooltip {
+  font-weight: normal;
+  max-width: 200px;
+  text-align: center;
+  z-index: 9999;
+  margin: 30px 15px 7px 12px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px dashed black;
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 1px black;
+  color: var(--yellow);
+  background: white;
+}
+
+/*animations*/
+
+.passportANI {
+  animation-name: passport;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+@keyframes passport {
+  0% {
+    transform: rotate(0deg);
+    margin-top: 60px;
+    opacity: 1;
+  }
+
+  50% {
+    transform: rotate(-90deg);
+    margin-top: -20px;
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(-90deg);
+    margin-top: -65px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.passportCloseANI {
+  animation-name: passportclose;
+  animation-duration: 1.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+@keyframes passportclose {
+  0% {
+    transform: rotate(-90deg);
+    margin-top: -65px;
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: rotate(-90deg);
+    margin-top: -20px;
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    margin-top: 60px;
+    opacity: 1;
+  }
+}
+
+.pageANI {
+  animation-name: pageanimation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+@keyframes pageanimation {
+  0% {
+    margin-top: 130px;
+    opacity: 0;
+  }
+
+  50% {
+    margin-top: 50px;
+    opacity: 0;
+  }
+
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+
+/* animation when turning page */
+.pageTurnANI1 {
+  animation-name: pageturnanimation1;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.pageTurnANI2 {
+  animation-name: pageturnanimation2;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+@keyframes pageturnanimation1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pageturnanimation2 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*to make it somewhat mobile compatible...*/
+
+#hide {
+  display: none;
+  padding: 10px;
+  background: white;
+  color: black;
+  width: 200px;
+}
+
+@media only screen and (max-width: 920px) {
+  :root {
+    --left: 170px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #hide {
+    display: block;
+  }
+}
