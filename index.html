@@ -59,6 +59,18 @@
         <a href="/blog">Blog</a>
         <a href="/journal">Journal</a>
       </nav>
+      <!-- hello section -->
+      <section class="widget" id="hello">
+        <h2>You fools have stumbled into my realm!</h2>
+        <p>
+          I welcome thee, stay and rest a while. I go by many names but you can
+          refer to me as <b>lichenhaunt</b>. This site is <i>HOT GARBAGE</i>,
+          but I wouldn't have it any other way &lt;3
+          <br />
+          This is mostly just a little space for me to be weird online in peace,
+          site is a WIP, but will serve as a digital journal.
+        </p>
+      </section>
       <!-- main side nav bar -->
       <nav id="side-nav" class="widget">
         <h2 class="nav-title main-title">Explore if you dare!</h2>
@@ -90,18 +102,6 @@
           >
         </ul>
       </nav>
-      <!-- hello section -->
-      <section class="widget" id="hello">
-        <h2>You fools have stumbled into my realm!</h2>
-        <p>
-          I welcome thee, stay and rest a while. I go by many names but you can
-          refer to me as <b>lichenhaunt</b>. This site is <i>HOT GARBAGE</i>,
-          but I wouldn't have it any other way &lt;3
-          <br />
-          This is mostly just a little space for me to be weird online in peace,
-          site is a WIP, but will serve as a digital journal.
-        </p>
-      </section>
       <!-- small web stuff -->
       <section class="widget" id="web-stuff">
         <h2 class="nav-title main-title">Stay Current (or Not)</h2>
@@ -142,91 +142,6 @@
           <p>placeholder for webrings/buttons for friends</p>
         </ul>
       </section>
-      <!-- music player code from solaria.neocities.org script and CSS for it is theirs too, edited slightly to fit my theme better -->
-      <div class="widget" id="music-player">
-        <h3 id="marq" class="main-title">
-          You're listening to 420.69 - Wizards Only Fools!
-        </h3>
-        <div class="jukebox">
-          <button class="activate">
-            <img
-              src="/assets/11808137_0a6bb.gif"
-              width="100px"
-              height="100px"
-            />
-          </button>
-          <ul>
-            <button onclick="stopmusic()">stop music</button>
-
-            <li>
-              <button value="0" onclick="playsong()">
-                dive-pkmn-oras.mp3
-                <audio>
-                  <source
-                    src="/collections/music/uploads/Pokemon Omega Ruby & Alpha Sapphire OST Dive Music.mp3"
-                    type="audio/mp3"
-                  />
-                </audio>
-              </button>
-            </li>
-            <li>
-              <button value="1" onclick="playsong()">
-                DΛRKNΣSS - magician whisper.mp3
-                <audio>
-                  <source
-                    src="/collections/music/uploads/DΛRKNΣSS - magician whisper.mp3"
-                    type="audio/mp3"
-                  />
-                </audio>
-              </button>
-            </li>
-            <li>
-              <button value="2" onclick="playsong()">
-                shadow wizard goblin insanity.mp3
-                <audio>
-                  <source
-                    src="/collections/music/uploads/shadow wizard goblin insanity.mp3"
-                    type="audio/mp3"
-                  />
-                </audio>
-              </button>
-            </li>
-            <li>
-              <!-- change last 2 songs later -->
-              <button value="3" onclick="playsong()">
-                i_hate_myself_for_loving_you.mp3
-                <audio>
-                  <source
-                    src="https://media-upload.net/uploads/TRNy3ljbSKXa.mp3"
-                    type="audio/mp3"
-                  />
-                </audio>
-              </button>
-            </li>
-            <li>
-              <button value="4" onclick="playsong()">
-                i_would_walk_500_miles.mp3
-                <audio>
-                  <source
-                    src="https://media-upload.net/uploads/KGSmbhNQCsfF.mp3"
-                    type="audio/mp3"
-                  />
-                </audio>
-              </button>
-            </li>
-          </ul>
-
-          <script>
-            var y = document.getElementsByTagName("audio");
-            for (var j = 0; j < y.length; j++) {
-              y[j].onended = function () {
-                document.getElementById("marq").innerHTML =
-                  "You're listening to 420.69 - Wizards Only Fools!";
-              };
-            }
-          </script>
-        </div>
-      </div>
 
       <!-- theme gifs that surround music player -->
       <div id="big-gifs">
@@ -235,6 +150,93 @@
           alt="sparkly accent gif"
           height="163px"
         />
+        <!-- music player code from solaria.neocities.org script and CSS for it is theirs too, edited slightly to fit my theme better -->
+        <div class="widget" id="music-player">
+          <h3 id="marq" class="main-title">
+            You're listening to 420.69 - Wizards Only Fools!
+          </h3>
+          <div class="jukebox">
+            <div class="activate">
+              <img
+                src="/assets/11808137_0a6bb.gif"
+                width="100px"
+                height="100px"
+                class="special"
+              />
+            </div>
+            <ul>
+              <button onclick="stopmusic()">stop music</button>
+
+              <li>
+                <button value="0" onclick="playsong()">
+                  dive-pkmn-oras.mp3
+                  <audio>
+                    <source
+                      src="/collections/music/uploads/Pokemon Omega Ruby & Alpha Sapphire OST Dive Music.mp3"
+                      type="audio/mp3"
+                    />
+                  </audio>
+                </button>
+              </li>
+              <li>
+                <button value="1" onclick="playsong()">
+                  DΛRKNΣSS - magician whisper.mp3
+                  <audio>
+                    <source
+                      src="/collections/music/uploads/DΛRKNΣSS - magician whisper.mp3"
+                      type="audio/mp3"
+                    />
+                  </audio>
+                </button>
+              </li>
+              <li>
+                <button value="2" onclick="playsong()">
+                  shadow wizard goblin insanity.mp3
+                  <audio>
+                    <source
+                      src="/collections/music/uploads/shadow wizard goblin insanity.mp3"
+                      type="audio/mp3"
+                    />
+                  </audio>
+                </button>
+              </li>
+              <li>
+                <!-- change last 2 songs later -->
+                <button value="3" onclick="playsong()">
+                  i_hate_myself_for_loving_you.mp3
+                  <audio>
+                    <source
+                      src="https://media-upload.net/uploads/TRNy3ljbSKXa.mp3"
+                      type="audio/mp3"
+                    />
+                  </audio>
+                </button>
+              </li>
+              <li>
+                <button value="4" onclick="playsong()">
+                  i_would_walk_500_miles.mp3
+                  <audio>
+                    <source
+                      src="https://media-upload.net/uploads/KGSmbhNQCsfF.mp3"
+                      type="audio/mp3"
+                    />
+                  </audio>
+                </button>
+              </li>
+            </ul>
+
+            <script>
+              var y = document.getElementsByTagName("audio");
+              for (var j = 0; j < y.length; j++) {
+                y[j].onended = function () {
+                  document.getElementById("marq").innerHTML =
+                    "You're listening to 420.69 - Wizards Only Fools!";
+                };
+              }
+            </script>
+          </div>
+        </div>
+
         <img
           src="./themes/v1/wizardcore/wizard-orb-pondering.gif"
           alt="sparkly accent gif"

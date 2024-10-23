@@ -154,6 +154,10 @@ header {
   border-color: var(--pink);
 }
 
+#big-gifs .special {
+  content: url(/assets/11808137_0a6bb.gif);
+}
+
 #big-gifs img {
   content: url(/themes/v1/mizuiro/Tumblr_l_9687564870417.gif);
 }
