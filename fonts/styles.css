@@ -12,3 +12,13 @@
   font-family: "Glow Night";
   src: url(GLOW\ NIGHT.otf);
 }
+
+@font-face {
+  font-family: "The Writer";
+  src: url(The\ Writer.ttf);
+}
+
+@font-face {
+  font-family: "Alagard";
+  src: url(alagard.ttf);
+}

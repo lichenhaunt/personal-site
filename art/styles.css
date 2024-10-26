@@ -1,0 +1,157 @@
+:root {
+  --mizuiro: rgb(162, 241, 255);
+  --baby-blue: rgb(153, 207, 231, 0.75);
+  --pink: rgb(201, 43, 135);
+  --purple: rgb(201, 116, 250);
+}
+
+html {
+  background-image: url(/art/assets/cloudy_sky1.PNG);
+  background-repeat: no-repeat;
+}
+
+#go-back img {
+  width: 33px;
+  height: 33px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mizuiro);
+}
+
+a:hover,
+a:focus {
+  background-color: var(--baby-blue);
+  color: var(--pink);
+}
+
+a:visited {
+  color: var(--purple);
+}
+
+header,
+.widget {
+  width: 90%;
+  display: flex;
+  color: white;
+  background-color: var(--baby-blue);
+  padding: 8px 4px;
+}
+
+header {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: "The Writer";
+  position: relative;
+  margin-top: -25px;
+}
+
+h1 {
+  padding: 0 1rem;
+  margin-top: 12px;
+}
+
+h3 {
+  padding: 0 2rem;
+  margin: 0;
+  font-family: "Alagard";
+}
+
+.widget {
+  margin: 2em auto;
+  font-family: "Glow Night";
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1em auto;
+  overflow-x: none;
+}
+
+.row div {
+  padding: 1em 2em;
+  width: fit-content;
+  height: 250px;
+  width: 250px;
+}
+
+.hidden {
+  display: hidden;
+  opacity: 0;
+  padding: 2px;
+}
+
+.hidden:hover,
+.hidden:focus-visible {
+  display: inline-flex;
+  opacity: 100;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.hidden p:hover,
+.hidden p:focus-visible,
+.hidden h3:focus-visible,
+.hidden h3:hover {
+  background-color: var(--mizuiro);
+  color: blue;
+}
+
+.art {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#angel {
+  background-image: url(https://iili.io/JW0EdRR.png);
+}
+
+#aiya {
+  background-image: url(https://iili.io/JW0EKxI.png);
+}
+
+#clowndog {
+  background-image: url(https://iili.io/JW01yla.png);
+}
+
+#espethereal {
+  background-image: url(https://iili.io/JW01LNV.png);
+}
+
+#femboy-denji {
+  background-image: url(https://iili.io/JW01iHx.png);
+}
+
+#roses {
+  background-image: url(https://iili.io/JW01B8x.png);
+}
+
+#no6 {
+  background-image: url(https://iili.io/JW01SV9.png);
+}
+
+#sona {
+  background-image: url(https://iili.io/JW01eN2.png);
+}
+
+#tama-party {
+  background-image: url(https://iili.io/JW00pyl.png);
+}
+
+#power {
+  background-image: url(https://iili.io/JW01hcG.png);
+}
